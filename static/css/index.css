@@ -1,0 +1,212 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Using Roboto as a tech-friendly font */
+    margin: 0;
+    padding: 0;
+    background-color: ##dbd8e3; /* Background color */
+    color: #222831; /* Default text color */
+}
+
+/* Importing the Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    color: #f7f7f7; /* Header text color */
+    margin: 0;
+}
+
+header a {
+    text-decoration: none; /* Removing underline */
+}
+
+header {
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    height: 80px; /* Header height */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    background-color: #f7f7f7; /* Hover background color */
+    color: #222831;
+}
+
+/* Header info section */
+#header-info {
+    height: 520px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#header-info p {
+    position: absolute;
+    font-family: 'Brush Script MT', cursive;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    z-index: 2; /* Ensures the text is above the image */
+}
+
+#header-info img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensures the image is below the text */
+}
+
+/* About section */
+#about {
+    height: 300px; /* Height of about div */
+    background: linear-gradient(to right, #434343 0%, black 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about h2 {
+    font-family: 'Roboto', sans-serif; /* Unique font for h2 */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* Text color */
+}
+
+#about p {
+    font-family: 'Brush Script MT', cursive;
+    color: #fff; /* Text color */
+    margin: 10px 0; /* Adjusting margin */
+}
+
+#image-above-services img {
+    width: 100%; /* Make the image fill the width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Services section */
+#services {
+    background: linear-gradient(to right, #434343 0%, black 100%);
+    width: 100%; /* Full width */
+    height: 400px; /* Height of 500px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#services h2 {
+    position: absolute;
+    font-family: 'Your Unique Font', sans-serif; /* Unique font */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* White text color */
+    top: 50px;
+    left: 45%;
+}
+
+#service1 {
+    background: linear-gradient(to right, #868f96 0%, #596164 100%);
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 150px;
+    left: 250px;
+    text-align: center;
+}
+
+#service1 p{
+   top: 150px;
+   position: absolute;
+   top: 20%;
+   font-family: 'Brush Script MT', cursive;
+   color: #fff;
+}
+
+#service2 p{
+   top: 150px;
+   position: absolute;
+   top: 20%;
+   font-family: 'Brush Script MT', cursive;
+   color: #fff;
+}
+
+#service2 {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 150px;
+    left: 850px;
+    text-align: center;
+    background: linear-gradient(to right, #868f96 0%, #596164 100%);
+}
+
+/* Join us section */
+#join-us {
+    height: 120px; /* Height of 80px */
+    width: 100%; /* Full width */
+    background: linear-gradient(to right, #868f96 0%, #596164 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#join-us a {
+    color: #000; /* Black text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+}
+
+footer {
+    height: 120px; /* Height of 120px */
+    width: 100%; /* Full width */
+    background: linear-gradient(to right, #434343 0%, black 100%); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* White text color */
+    text-align: center;
+}
+
+/* Flash message styles */
+.flash-message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.flash-message.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border-color: #ebccd1;
+}
+
+.flash-message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border-color: #d6e9c6;
+}
+
+

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<header>
+    <a href="/"><h1>Customer Insight AI</h1></a>
+    <nav>
+        <a href="#services">Services</a> |
+        <a href="#about">About</a> |
+        <a href=" {{ url_for('login')}}">Login</a>
+    </nav>
+</header>
+
+<div class="card">
+    <h1>Create Account</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <p class="flash-message {{ category }}">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <form name="signup_form" method="POST" action="{{ url_for('user_signup')}}">
+        <label for="name">Company Name</label>
+        <input type="text" name="name" class="field" required>
+
+        <label for="email">Company Email</label>
+        <input type="email" name="email" class="field" required>
+
+        <label for="password">Company Password</label>
+        <input type="password" name="password" class="field" required>
+
+        <input type="submit" value="Sign Up" class="btn">
+    </form>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2024 All Rights Reserved. By Customer Insight AI</p>
+</footer>
+
+{% endblock %}

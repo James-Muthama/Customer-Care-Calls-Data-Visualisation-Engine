@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+     <header>
+         <a href="{{ url_for('homepage') }}"><h1>Customer Insight AI</h1></a>
+         <nav>
+             <a href="#services">Services</a> |
+             <a href="#about">About</a> |
+             <a href="{{ url_for('sign_out') }}">Logout</a>
+         </nav>
+     </header>
+
+     <div id="welcome_msg">
+         <p>Welcome {{ session['user'] }}</p>
+     </div>
+
+     <footer>
+         <p>Copyright &copy; 2024 All Rights Reserved. By Customer Insight AI</p>
+     </footer>
+
+{% endblock %}
+

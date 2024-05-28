@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <header>
+        <a href="/"><h1>Customer Insight AI</h1></a>
+        <nav>
+            <a href="#services">Services</a> |
+            <a href="#about">About</a> |
+            <a href=" {{ url_for('login')}}">Login</a>
+        </nav>
+    </header>
+
+    <div id="header-info">
+        <p>Using AI to Visualise Data from Customer Care Calls</p>
+        <img src="/images/Data-Visualization.jpg" alt="Header Image">
+    </div>
+
+    <div id="about">
+        <h2>What We Do</h2>
+        <p>CustomerInsightAI is a project aimed at automating the understanding of customer feedback by converting customer care conversations into text. The system uses artificial intelligence (AI) to analyze and categorize customer interactions based on predetermined categories set for the particular AI model.</p>
+    </div>
+
+    <div id="image-above-services">
+        <img src="/images/Demistifyingcustomerservice.jpg" alt="Image Above Services">
+    </div>
+
+    <div id="services">
+        <h2>Our Services</h2>
+        <div id="service1">
+            <p>Customer Care Calls Analysis</p>
+        </div>
+        <div id="service2">
+            <p>Customer Care Calls Data Visualisation</p>
+        </div>
+    </div>
+
+    <div id="join-us">
+        <a href="{{ url_for('signup')}}">Join Us</a>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2024 All Rights Reserved. By Customer Insight AI</p>
+    </footer>
+
+{% endblock %}

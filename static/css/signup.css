@@ -1,0 +1,120 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Using Roboto as a tech-friendly font */
+    margin: 0;
+    padding: 0;
+    background-color: #dbd8e3; /* Background color */
+    color: #222831; /* Default text color */
+}
+
+/* Importing the Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    color: #ffffff; /* White Header text color */
+    text-align: center;
+    margin: 20px 0;
+}
+
+header a {
+    text-decoration: none; /* Removing underline */
+}
+
+header {
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    height: 80px; /* Header height */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    background-color: #f7f7f7; /* Hover background color */
+    color: #222831;
+}
+
+footer {
+    height: 120px; /* Height of 120px */
+    width: 100%; /* Full width */
+    background: linear-gradient(to right, #434343 0%, black 100%); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* White text color */
+    text-align: center;
+}
+
+/* Card styles */
+.card {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); /* Radial gradient background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #ffffff; /* White label text color */
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.field {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff; /* White input background color */
+    color: #000000; /* Black input text color */
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.field:hover {
+    background-color: #f2f2f2; /* Lighter shade on hover */
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222831;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #393e46; /* Darker shade on hover */
+}
+
+.error {
+    color: red;
+    margin-bottom: 20px;
+}
